@@ -24,9 +24,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(file_exists("upload/" . $_FILES["photo"]["name"])){
                 echo $_FILES["photo"]["name"] . " is already exists.";
             } else{
-               // echo "https://web.njit.edu/~hs574/public_html/uploads/" . $_FILES["photo"]["name"];
+               // echo "https://web.njit.edu/~st632/public_html/uploads/" . $_FILES["photo"]["name"];
                 echo "\n"; 
-                move_uploaded_file($_FILES["photo"]["tmp_name"],"upload/" . $_FILES["photo"]["name"]);
+                move_uploaded_file($_FILES["photo"]["tmp_name"],"uploads/" . $_FILES["photo"]["name"]);
                 echo "Your file was uploaded successfully.";
                   
 
