@@ -1,5 +1,5 @@
 <?php
-$target_dir = "upload/";
+$target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["photo"]["name"]);
 // Check if the form was submitted
 function uploadmanager()
@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 echo "Your file was uploaded successfully.";
                   
 
-                  header("Location:https://web.njit.edu/~hs574/project2/display.php?name=$filename");
+                  header("Location:https://web.njit.edu/~st632/Project1/display.php?name=$filename");
 
             }
 
