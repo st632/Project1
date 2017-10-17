@@ -1,6 +1,6 @@
 <?php
 echo "<html><body><table border=1>\n\n";
-$name= "upload/".$_REQUEST['name'];
+$name= "uploads/".$_REQUEST['name'];
 
 
 
