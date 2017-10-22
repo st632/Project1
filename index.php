@@ -79,7 +79,7 @@ class homepage extends page {
         echo '<html lang="en">';
         echo '<head>';
     //<meta charset="UTF-8">
-    //<title>File ready to Upload</title>
+    //<title>File which is ready to Upload</title>
         echo '</head>';
         echo '<body><form action="index.php?page=homepage" method="post" enctype="multipart/form-data">';
         echo '<h2>Upload File</h2>';
@@ -100,7 +100,7 @@ $target_file = $target_dir . basename($_FILES["photo"]["name"]);
 function uploadmanager()
 {
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    // Check if file was uploaded without errors
+    // Check if file that was uploaded without errors
     if(isset($_FILES["photo"]) && $_FILES["photo"]["error"] == 0){
         $allowed = array("csv");
         $filename = $_FILES["photo"]["name"];
@@ -134,7 +134,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 }
 }
-uploadmanager();
+
     }
     
     
